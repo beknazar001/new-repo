@@ -1,15 +1,15 @@
-terraform {
-  backend "gcs" {
-    bucket = "beki-my-bucket-for-circleci"
-    prefix = "terraform/state"
-  }
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "3.53.0"
-    }
-  }
-}
+# terraform {
+#   backend "gcs" {
+#     bucket = "beki-my-bucket-for-circleci"
+#     prefix = "terraform/state"
+#   }
+#   required_providers {
+#     google = {
+#       source  = "hashicorp/google"
+#       version = "3.53.0"
+#     }
+#   }
+# }
 
 
 
@@ -21,7 +21,7 @@ provider "google" {
 #   # credentials = file(var.credentials_file_path)
 
 
-  project = var.project_id
+  # project = var.project_id
   region  = var.region
   zone    = var.main_zone
 }
