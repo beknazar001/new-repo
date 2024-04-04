@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# Define the name of the feature branch
-feature_branch=$1
+# Define the name of the file branch
+new_branch=$1
 
 # Step 1: Create and switch to a new branch
-git checkout -b "$feature_branch" main
+git checkout -b "$new_branch"
 
-# Step 2: Make changes and commit them on the feature branch
-echo "First feature commit" >> feature.txt
-git add feature.txt
-git commit -m "First feature commit"
+# Step 2: Make changes and commit them on the file branch
+echo "First file commit" >> file.txt
+git add file.txt
+git commit -m "First file commit"
 
-echo "Second feature commit" >> feature.txt
-git add feature.txt
-git commit -m "Second feature commit"
+echo "Second file commit" >> file.txt
+git add file.txt
+git commit -m "Second file commit"
 
 # Step 3: Switch back to the main branch
 git checkout main
@@ -22,10 +22,10 @@ git checkout main
 git pull origin main
 
 # Step 5: Perform the squash merge
-git merge --squash "$feature_branch"
+git merge --squash "$new_branch"
 
 # Step 6: Commit the squashed changes
-git commit -m "Squashed feature commits"
+git commit -m "Squashed file commits"
 
 # Step 7: Display confirmation message
 echo "Squash merge completed."
