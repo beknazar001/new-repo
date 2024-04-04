@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Define the name of the file branch
-new_branch=$1
 
 # Step 1: Create and switch to a new branch
 git checkout -b "$new_branch"
