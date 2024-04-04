@@ -31,3 +31,11 @@ echo "Squash merge completed."
 
 # Optional: You can push the changes to remote if needed
 # git push origin main
+
+
+# ./create-commit.sh
+#git log --oneline
+#git push origin squ
+#git rebase -i hash
+#git log --oneline
+#git push origin squ -f
