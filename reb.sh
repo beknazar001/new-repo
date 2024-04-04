@@ -32,3 +32,18 @@ echo "Rebase merge completed."
 
 # Optional: You can push the changes to remote if needed
 # git push origin main
+
+# git checkout reb
+# git add .
+# git commit -m "asdf"
+# git log --oneline
+# git checkout main
+# git add .
+# git commit -m "changed fast"
+# git log --oneline
+# git checkout reb
+# git log --oneline
+# git rebase main reb
+# git log --oneline
+# git checkout main
+# git merge reb
