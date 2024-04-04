@@ -14,13 +14,6 @@
 
 
 provider "google" {
-  # credentials = file(var.credentials_file_path)
-
-# TESTING CONFLICT
-# provider "google" {
-#   # credentials = file(var.credentials_file_path)
-
-
   # project = var.project_id
   region  = var.region
   zone    = var.main_zone
