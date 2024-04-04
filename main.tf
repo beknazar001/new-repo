@@ -11,14 +11,20 @@ terraform {
   }
 }
 
+
+
+provider "google" {
+  # credentials = file(var.credentials_file_path)
+
 # TESTING CONFLICT
 # provider "google" {
 #   # credentials = file(var.credentials_file_path)
 
-#   project = var.project_id
-#   region  = var.region
-#   zone    = var.main_zone
-# }
+
+  project = var.project_id
+  region  = var.region
+  zone    = var.main_zone
+}
 
 module "google_networks" {
   source = "./networks"

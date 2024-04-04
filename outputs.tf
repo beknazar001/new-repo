@@ -8,9 +8,9 @@ output "configure_kubectl_command_for_cluster" {
 }
 
 #asdfasdf
-# output "kubectl_alias_command" {
-#     description = "Command that creates an alias for kubectl using Bastion as proxy. Bastion ssh tunnel must be running."
-#     value = "alias kubectl='${module.bastion.kubectl_command}'"
-# }
+output "kubectl_alias_command" {
+    description = "Command that creates an alias for kubectl using Bastion as proxy. Bastion ssh tunnel must be running."
+    value = "alias kubectl='${module.bastion.kubectl_command}'"
+}
 
 # asdfasdf
