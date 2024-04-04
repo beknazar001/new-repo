@@ -1,15 +1,15 @@
-terraform {
-  backend "gcs" {
-    bucket = "beki-my-bucket-for-circleci"
-    prefix = "terraform/state"
-  }
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "3.53.0"
-    }
-  }
-}
+# terraform {
+#   backend "gcs" {
+#     bucket = "beki-my-bucket-for-circleci"
+#     prefix = "terraform/state"
+#   }
+#   required_providers {
+#     google = {
+#       source  = "hashicorp/google"
+#       version = "3.53.0"
+#     }
+#   }
+# }
 
 
 
