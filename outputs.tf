@@ -12,5 +12,5 @@ output "kubectl_alias_command" {
     description = "Command that creates an alias for kubectl using Bastion as proxy. Bastion ssh tunnel must be running."
     value = "alias kubectl='${module.bastion.kubectl_command}'"
 }
-
+#sadfasdfasdf
 # asdfasdf
