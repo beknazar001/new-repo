@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Define the name of the feature branch
 feature_branch=$1
 # Step 1: Create and switch to a new branch
