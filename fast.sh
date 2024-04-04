@@ -16,5 +16,6 @@ git merge "$feature_branch"
 # Step 6: Display confirmation message
 echo "Fast-forward merge completed."
 # Optional: You can push the changes to remote if needed
+# here we will have conflict
 # git push origin main
 
