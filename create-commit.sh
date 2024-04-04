@@ -4,6 +4,7 @@
 new_branch=$1
 
 # Create 10 files and make some changes to them
+
 touch "file-$new_branch.txt"
 git checkout -b "$new_branch" main
 git checkout  "$new_branch" 
@@ -16,7 +17,6 @@ do
     # Commit the changes with a timestamp
     commit_message="Changes made at $(date)"
     git commit -m "$commit_message"
-    # Create a new branch
 done
 
 
