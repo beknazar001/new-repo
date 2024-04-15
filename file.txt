@@ -1,1 +1,1 @@
-I have added to check the git fast
+This one was added to check the merge in UI
