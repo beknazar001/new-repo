@@ -14,7 +14,7 @@ git checkout  "$new_branch"
 for i in {1..10}
 do
     
-    echo "This is file $i" >> "file.txt"
+    echo "This is rec file $i" >> "file.txt"
     # Stage all changes
     git add .
     # Commit the changes with a timestamp
