@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in {1..10}
+for i in {1..3}
 do
     
     echo "This is file $i" >> "file.txt"
